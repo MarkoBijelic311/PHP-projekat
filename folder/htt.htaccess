@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Rewrite rule to internally map .html to .php files
+    RewriteRule ^(.+)\.html$ $1.php [L]
+</IfModule>
